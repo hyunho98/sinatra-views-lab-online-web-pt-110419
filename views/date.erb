@@ -1,11 +1,10 @@
-<% require 'date' %>
-
 <h1>Today</h1>
 
 <%
-day = Time.strftime('%A')
-month = Time.strftime('%B')
-year = Time.strftime('%Y')
+now = Time.new
+day = now.strftime('%A')
+month = now.strftime('%B')
+year = now.strftime('%Y')
 %>
 <p>
   <%= "The date is #{day}, #{month} #{Date.new.day}, #{year} #{Date.new.to_s}" %>
