@@ -1,0 +1,12 @@
+<h1>Today</h1>
+
+<%
+now = Time.new
+day = now.strftime('%A')
+month = now.strftime('%B')
+year = now.strftime('%Y')
+%>
+
+<p>
+  <%= "The date is #{day}, #{month} #{now.day}, #{year}" %>
+</p>
