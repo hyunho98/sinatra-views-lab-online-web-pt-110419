@@ -2,6 +2,11 @@
 
 <h1>Today</h1>
 
+<%
+day = Date.today().strftime('%A')
+month = Date.today().strftime('%B')
+year = Date.today().strftime('%Y')
+%>
 <p>
-  <%= 1 + 1 %>
+  <%= "The date is #{day}, #{month} #{Date.new.day}, #{year}" %>
 </p>
