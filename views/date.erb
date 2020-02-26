@@ -3,9 +3,9 @@
 <h1>Today</h1>
 
 <%
-day = Date.today().strftime('%A')
-month = Date.today().strftime('%B')
-year = Date.today().strftime('%Y')
+day = Time.today().strftime('%A')
+month = Time.today().strftime('%B')
+year = Time.today().strftime('%Y')
 %>
 <p>
   <%= "The date is #{day}, #{month} #{Date.new.day}, #{year} #{Date.new.to_s}" %>
